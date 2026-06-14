@@ -6,26 +6,26 @@ Built with Python, Gemini AI, and Kubernetes Python Client.
 
 ## Features
 
-✅ **Automated Signal Collection**
+**Automated Signal Collection**
 - Pod status and health checks
 - Container logs (last N lines, configurable)
 - Kubernetes events (warnings, errors)
 - Pod describe information
 - Multi-container support
 
-✅ **AI-Powered Analysis**
+**AI-Powered Analysis**
 - Root cause identification using Gemini AI
 - Confidence scoring (HIGH/MEDIUM/LOW)
 - Evidence-based reasoning
 - Actionable remediation steps
 
-✅ **Beautiful CLI Output**
+**Beautiful CLI Output**
 - Rich terminal UI with colors and tables
 - Progress indicators
 - Markdown and JSON output formats
 - Save reports to files
 
-✅ **Production-Ready**
+**Production-Ready**
 - Structured logging (console + file)
 - Simple typed Python modules using plain dictionaries
 - Cost-controlled (configurable log limits)
@@ -54,7 +54,7 @@ pip install -e .
 
 ### 3. Configuration
 
-**⚠️ Important:** Add your Gemini API key to `.env`:
+**Important:** Add your Gemini API key to `.env`:
 
 ```bash
 # Edit the .env file
@@ -117,8 +117,8 @@ k8s-triage --help
 ╰───────────────────────────────────────────────╯
 
 Service Information
-Pod         springpm-api-dev-ga-6468d85b66-frhrz
-Namespace   skydeck-dev
+Pod         payments-microservice-xxx
+Namespace   prod-namespace
 Status      Running
 Ready       1/1
 
@@ -163,21 +163,11 @@ k8s-ai-troubleshooter/
 
 ### "Cannot connect to Kubernetes cluster"
 - Ensure `kubectl` is configured: `kubectl get pods`
-- Check namespace: `kubectl get pods -n skydeck-dev`
+- Check namespace: `kubectl get pods -n prod-namespace`
 
 ### "Cannot initialize Gemini client"
 - Check your API key in `.env`
 - Verify key is valid at https://aistudio.google.com/
 
 ### "Pod not found"
-- Verify pod exists: `kubectl get pods -n skydeck-dev`
-
-## Author
-
-**Haaris**  
-SRE Engineer | AI/ML Enthusiast  
-Built as a portfolio project demonstrating production-grade operational automation.
-
----
-
-**Status:** ✅ End-to-end implementation complete!
+- Verify pod exists: `kubectl get pods -n prod-namespace`
