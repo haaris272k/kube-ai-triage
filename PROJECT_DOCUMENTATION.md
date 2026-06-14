@@ -25,7 +25,7 @@ K8s AI Triage is an **AI-powered Kubernetes incident response tool** that automa
 - Inconsistent analysis quality depending on SRE experience
 - No structured documentation of initial findings
 
-**Our Solution:**
+**Solution:**
 - **Automated signal collection** from Kubernetes API
 - **AI-powered analysis** using Google Gemini to correlate signals
 - **Instant insights** with confidence scoring and evidence
@@ -48,27 +48,27 @@ K8s AI Triage is an **AI-powered Kubernetes incident response tool** that automa
 
 ### Key Features
 
-✅ **Automated Data Collection**
+**Automated Data Collection**
 - Pod status, health, and lifecycle information
 - Container states, restart counts, exit codes
 - Kubernetes events (warnings, errors)
 - Container logs with intelligent truncation
 - Multi-container pod support
 
-✅ **AI-Powered Analysis**
+**AI-Powered Analysis**
 - Root cause identification with confidence scoring
 - Evidence-based reasoning (references specific signals)
 - Pattern recognition across logs, events, conditions
 - Context-aware recommendations
 
-✅ **Production-Ready Design**
+**Production-Ready Design**
 - Cost controls (configurable log limits)
 - Error handling and graceful degradation
 - Structured logging for audit trails
 - Type-safe implementation
 - Clean, maintainable codebase (~1200 lines)
 
-✅ **User Experience**
+**User Experience**
 - Beautiful CLI with Rich terminal formatting
 - Progress indicators during analysis
 - Color-coded status and confidence levels
