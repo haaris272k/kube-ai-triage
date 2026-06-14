@@ -69,7 +69,7 @@ GEMINI_API_KEY="your-actual-gemini-api-key-here"
 **Analyze a pod:**
 
 ```bash
-k8s-triage pod springpm-api-dev-ga-6468d85b66-frhrz
+k8s-triage pod payments-microservice-xxx
 ```
 
 **With custom namespace:**
